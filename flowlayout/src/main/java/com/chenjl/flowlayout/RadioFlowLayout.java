@@ -187,6 +187,14 @@ public class RadioFlowLayout extends AdapterFlowLayout {
                 ((TagView) child).setOnCheckedChangeWidgetListener(null);
             }
 
+            if(child instanceof TagView && ((TagView) child).isChecked()){
+                TagView tagView = mWeakRefCheckedView != null ? mWeakRefCheckedView.get() : null;
+                if(tagView != null && tagView == child){
+                    mWeakRefCheckedView.clear();
+                    mWeakRefCheckedView = null;
+                }
+            }
+
             if (mOnHierarchyChangeListener != null) {
                 mOnHierarchyChangeListener.onChildViewRemoved(parent, child);
             }
