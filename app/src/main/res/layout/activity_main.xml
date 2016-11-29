@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="getCurCheckedView"
+        android:singleLine="true"
+        android:text="CurrentCheckedView"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="none"
+            android:singleLine="true"
+            android:text="none"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="align"
+            android:singleLine="true"
+            android:text="align"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="left"
+            android:singleLine="true"
+            android:text="left"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="right"
+            android:singleLine="true"
+            android:text="right"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="specifyLines"
+            android:singleLine="true"
+            android:text="specifyLines"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="add"
+            android:singleLine="true"
+            android:text="add"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="remove"
+            android:singleLine="true"
+            android:text="remove"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="setAdapter"
+            android:singleLine="true"
+            android:text="setAdapter"/>
+    </LinearLayout>
+
+    <com.chenjl.flowlayout.RadioFlowLayout
+        android:id="@+id/radio_flow_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#dfd"
+        app:align="center"
+        app:lineSpacing="5dp">
+
+        <com.chenjl.flowlayout.RadioTagView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textcolor"
+            android:background="@drawable/radio_selector"
+            android:clickable="true"
+            android:text="The No.1"/>
+
+        <com.chenjl.flowlayout.RadioTagView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textcolor"
+            android:background="@drawable/radio_selector"
+            android:clickable="true"
+            android:text="The No.22"/>
+
+        <com.chenjl.flowlayout.RadioTagView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textcolor"
+            android:background="@drawable/radio_selector"
+            android:clickable="true"
+            android:text="The No.333"/>
+
+        <com.chenjl.flowlayout.RadioTagView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/radio_selector"
+            android:checked="true"
+            android:clickable="true"
+            android:textColor="@color/textcolor"
+            android:text="The No.4444"/>
+
+        <com.chenjl.flowlayout.RadioTagView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textcolor"
+            android:background="@drawable/radio_selector"
+            android:checked="true"
+            android:clickable="true"
+            android:text="The No.55555"/>
+
+        <com.chenjl.flowlayout.RadioTagView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textcolor"
+            android:background="@drawable/radio_selector"
+            android:clickable="true"
+            android:text="The No.666666"/>
+
+
+    </com.chenjl.flowlayout.RadioFlowLayout>
+
+</LinearLayout>
